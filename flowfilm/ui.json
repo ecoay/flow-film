@@ -1,0 +1,180 @@
+{
+  "_note": "Every Flow UI hook lives here. When Google changes Flow, edit this file only. Each key lists fallbacks tried in order. Prefix 'role:' = ARIA role + accessible name regex, 'text:' = visible text regex, anything else = CSS.",
+  "home_url": "https://flow.google.com/",
+  "lang_param": "hl=en",
+  "signed_out_url_regex": "/about|accounts\\.google\\.com",
+  "new_project": [
+    "role:button:^\\s*(add_2\\s*)?New project",
+    "text:^New project$"
+  ],
+  "prompt_box": [
+    ".ProseMirror",
+    "[contenteditable='true']",
+    "textarea"
+  ],
+  "generate_button": [
+    "role:button:Start generation",
+    "role:button:^(Create|Generate)$"
+  ],
+  "settings_toggle": [
+    "role:button:^Settings trigger$"
+  ],
+  "mode_image": [
+    "role:radio:^Image$",
+    "role:tab:^Image$"
+  ],
+  "mode_video": [
+    "role:radio:^Video$",
+    "role:tab:^Video$"
+  ],
+  "video_frames": [
+    "role:radio:^Frames$",
+    "role:tab:^Frames$"
+  ],
+  "aspect_option": [
+    "role:radio:^{aspect}$",
+    "text:^{aspect}$"
+  ],
+  "duration_option": [
+    "role:radio:^{seconds}s$",
+    "text:^{seconds}s$"
+  ],
+  "resolution_option": [
+    "role:radio:^{res}\\b"
+  ],
+  "variants_option": [
+    "role:radio:^x{n}$",
+    "text:^x{n}$"
+  ],
+  "price_quote": [
+    "role:link:\\d+\\s+credits?$",
+    "text:^\\d+\\s+credits?$"
+  ],
+  "credit_balance": [
+    "role:link:\\d[\\d,]*\\s+AI credits",
+    "role:link:Google Flow credits",
+    "text:\\d[\\d,]*\\s+AI\\s+credits"
+  ],
+  "start_frame_slot": [
+    "role:button:^Start$",
+    "text:^Start$"
+  ],
+  "end_frame_slot": [
+    "role:button:^End$",
+    "text:^End$"
+  ],
+  "upload_menu": [
+    "role:button:Add media",
+    "role:button:^Upload$"
+  ],
+  "upload_item": [
+    "role:menuitem:^Upload",
+    "text:^Upload( media)?$"
+  ],
+  "asset_list_option": [
+    "role:option:{name}"
+  ],
+  "grid_tile": [
+    "flow-grid-tile-container",
+    "[data-tile-id]"
+  ],
+  "tile_media": [
+    "img[data-media-id]",
+    "video",
+    "img"
+  ],
+  "tile_progress_regex": "\\b\\d{1,3}%",
+  "tile_error": [
+    "flow-error-tile",
+    "text:failed to generate"
+  ],
+  "tile_retry": [
+    "role:button:^Retry$"
+  ],
+  "download_menu_item": [
+    "role:menuitem:^Download",
+    "text:^Download$"
+  ],
+  "download_quality_video": [
+    "role:menuitem:^1080p",
+    "role:menuitem:^720p",
+    "text:720p"
+  ],
+  "download_quality_image": [
+    "role:menuitem:^2K",
+    "role:menuitem:^1K",
+    "text:1K"
+  ],
+  "agent_toggle": [
+    "role:button:^Agent$",
+    "role:switch:^Agent$"
+  ],
+  "nav_characters": [
+    "role:link:^Characters$",
+    "role:button:^Characters$",
+    "text:^Characters$"
+  ],
+  "character_new": [
+    "role:button:New character",
+    "text:^New character$"
+  ],
+  "character_name": [
+    "role:textbox:Character name"
+  ],
+  "character_done": [
+    "role:button:^Done$",
+    "role:button:^Done editing$"
+  ],
+  "character_tile": [
+    "flow-character-tile",
+    "text:accessibility_new"
+  ],
+  "_verified": "Live-checked 2026-10-14 23:40 CT on flow.google.com (signed in, Pro/free plan with 50 AI credits).",
+  "model_family": [
+    "role:button:^Select model family$"
+  ],
+  "model_option": [
+    "role:menuitem:{model}",
+    "role:option:{model}"
+  ],
+  "video_model": "Omni 1.1 Flash",
+  "image_model": "Nano Banana",
+  "welcome_dismiss": [
+    "role:button:^Get started$",
+    "role:button:^Got it$",
+    "role:button:^Dismiss$"
+  ],
+  "session_panel_marker": [
+    "role:button:^Start new session$"
+  ],
+  "session_panel_close": [
+    "role:button:^Close$"
+  ],
+  "account_menu": [
+    "role:button:^Account details$"
+  ],
+  "character_prompt": [
+    "role:textbox:Describe your character"
+  ],
+  "ingredients_button": [
+    "role:button:^Add ingredients to the prompt box$",
+    "role:button:^Add (ingredients|media|references?|images?)( to (the )?prompt( box)?)?$"
+  ],
+  "ingredient_upload": [
+    "role:button:^Upload media$"
+  ],
+  "ingredient_add": [
+    "role:button:^Add to prompt$"
+  ],
+  "upload_rights_agree": [
+    "role:button:^I agree$"
+  ],
+  "main_region": "#main-content",
+  "clear_prompt": [
+    "role:button:^Clear prompt$"
+  ],
+  "account_close": [
+    "role:button:^Close account panel$"
+  ],
+  "video_tile_marker": "img[alt*='video' i], video"
+}
